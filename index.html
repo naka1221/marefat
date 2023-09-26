@@ -4,22 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+<link rel="stylesheet" href="vendor/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="vendor/fontawsom5/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/responsive.css">
+  
+   
+
+    <title>مهر معرفت-دکتر فلاح رفیع</title>
 </head>
 <body>
 
  <!-- Start Navbar -->
+ <div class="overlay"></div>
     <nav>
+        <div class="min-nav">
+            <div class="container-min-nav">
+                <div class="line-nav">
+                    <span class="line-min_nav"></span>
+                </div>
+                
+                <div class="top-nav_right-titlee"> <a href="index.html">مهر معرفت</a> </div>
+                <div class="min-search"> 
+                    <i class="fa fa-search "></i>
+            </div>
+
+            </div>
+        </div>
+        <div class="min-nav_input">
+            <input type="search"  placeholder="جستجو ...">
+        </div>
+        <div class="nav-side hide">
+            <div class="">
+                <ul class="nav-side_main">
+                    <li class="min-nav_listItem" id="introduce"> <a href="pages/Introduction.html"> معرفی</a></li>
+                    <li class="min-header__item min-nav_listItem" id="taf">
+                        <a href="pages/interpretation.html" class="min-header__link">تفسیر
+                          <i class="fas fa-angle-down min-header__link-icon"></i>
+                          <ul class="min-header__dropdown">
+                            <li class="min-header__dropdown-item">
+                              <a href="#" class="min-header__dropdown-link">آموزش کالی لینوکس</a>
+                            </li>
+                            <li class="min-header__dropdown-item">
+                              <a href="#" class="min-header__dropdown-link">آموزش پایتون سیاه</a>
+                            </li>
+                            <li class="min-header__dropdown-item">
+                                <a href="#" class="min-header__dropdown-link">آموزش پایتون سیاه</a>
+                              </li>
+                              <li class="min-header__dropdown-item">
+                                <a href="#" class="min-header__dropdown-link">آموزش پایتون سیاه</a>
+                              </li>
+                          </ul>
+                        </a>
+                    </li>              
+                    <li class="min-nav_listItem" id="kar"> <a href="pages/workshop.html"> کارگاه</a></li>
+                    <li class="min-header__item min-nav_listItem" id="classes">
+                        <a href="pages/classes.html" class="min-header__link">کلاسها
+                          <i class="fas fa-angle-down min-header__link-icon"></i>
+                          <ul class="min-header__dropdown">
+                            <li class="min-header__dropdown-item">
+                              <a href="#" class="min-header__dropdown-link">آموزش کالی لینوکس</a>
+                            </li>
+                            <li class="min-header__dropdown-item">
+                              <a href="#" class="min-header__dropdown-link">آموزش پایتون سیاه</a>
+                            </li>
+                          </ul>
+                        </a>
+                    </li>
+                    <li class="min-nav_listItem" id="report"> <a href="pages/speech.html"> سخنرانی ها</a></li>
+                    <li class="min-nav_listItem six" id="poem"> <a href="pages/Poetry.html">  اشعار و دل نوشته های ادبی</a></li>
+                    <li class="min-nav_listItem" id="mo"> <a href="pages/interview.html">  مصاحبه ها</a></li>
+                    <li class="min-nav_listItem six" id="days"> <a href="pages/notes.html">  یادداشت های روزانه</a></li>
+                    <li class="min-nav_listItem" id="gallery"> <a href="pages/gallery.html">  آلبوم عکس</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+
         <div class="top-nav">
             <div class="top-nav_left">
                 <div class="top-nav_left-login">
-                    <span>ورود کاربر</span>
+
+                    <span> <a class="loginn" href="pages/login.html">ورود کاربر</a> </span>
                     <a href="">
-                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-lock log"></i>
                     </a>
                 </div>
                 <div class="top-nav_left-list">
@@ -40,30 +121,36 @@
                     <div class="top-nav_left-searchLogo">
                         <a href=""></a>
                     </div>
-                    <input  type="search" placeholder="جستجو ..." >
+                    <div class="search-icon">
+                             <input  type="search" placeholder="جستجو ..." >
                     <i class="fa fa-search search"></i>
                 </input>
+                    </div>
+               
                 </div>
             </div>
             <div class="top-nav_right">
                 <div class="top-nav_right-logo">
                     <div class="dark-mode show">              
-                        <i class=" fab fa-github"></i>
+                        <!-- <i class=" fab fa-github"></i> -->
+                        <img class="" src="images/dark-mode.svg" alt="">
+
                     </div>
                     <div class="light-mode">
-                        <i class=" fab fa-facebook"></i>
+                        <!-- <i class=" fab fa-facebook"></i> -->
+                        <img class="" src="images/light-mode.svg" alt="">
                     </div>
 
               
             </div>
-                <div class="top-nav_right-title"> مهر معرفت</div>
+                <div class="top-nav_right-titlee"> <a href="index.html">مهر معرفت</a> </div>
             </div>
         </div>
         <div class="down-nav">
             <ul class="main-nav">
-                <li class="main-nav_listItem"> <a href="#"> معرفی</a></li>
-                <li class="main-header__item main-nav_listItem">
-                    <a href="#" class="main-header__link">تفسیر
+                <li class="main-nav_listItem" id="introduce"> <a href="pages/Introduction.html"> معرفی</a></li>
+                <li class="main-header__item main-nav_listItem" id="taf">
+                    <a href="pages/interpretation.html" class="main-header__link">تفسیر
                       <i class="fas fa-angle-down main-header__link-icon"></i>
                       <ul class="main-header__dropdown">
                         <li class="main-header__dropdown-item">
@@ -81,9 +168,9 @@
                       </ul>
                     </a>
                 </li>              
-                <li class="main-nav_listItem"> <a href="#"> کارگاه</a></li>
-                <li class="main-header__item main-nav_listItem">
-                    <a href="#" class="main-header__link">کلاسها
+                <li class="main-nav_listItem" id="kar"> <a href="pages/workshop.html"> کارگاه</a></li>
+                <li class="main-header__item main-nav_listItem" id="classes">
+                    <a href="pages/classes.html" class="main-header__link">کلاسها
                       <i class="fas fa-angle-down main-header__link-icon"></i>
                       <ul class="main-header__dropdown">
                         <li class="main-header__dropdown-item">
@@ -95,16 +182,68 @@
                       </ul>
                     </a>
                 </li>
-                <li class="main-nav_listItem"> <a href="#"> سخنرانی ها</a></li>
-                <li class="main-nav_listItem"> <a href="#">  اشعار و دل نوشته های ادبی</a></li>
-                <li class="main-nav_listItem"> <a href="#">  مصاحبه ها</a></li>
-                <li class="main-nav_listItem"> <a href="#">  یادداشت های روزانه</a></li>
-                <li class="main-nav_listItem"> <a href="#">  آلبوم عکس</a></li>
+                <li class="main-nav_listItem" id="report"> <a href="pages/speech.html"> سخنرانی ها</a></li>
+                <li class="main-nav_listItem six" id="poem"> <a href="pages/Poetry.html">  اشعار و دل نوشته های ادبی</a></li>
+                <li class="main-nav_listItem" id="mo"> <a href="pages/interview.html">  مصاحبه ها</a></li>
+                <li class="main-nav_listItem six" id="days"> <a href="pages/notes.html">  یادداشت های روزانه</a></li>
+                <li class="main-nav_listItem" id="gallery"> <a href="pages/gallery.html">  آلبوم عکس</a></li>
             </ul>
         </div>
     </nav>
 <!-- Finish Navbar -->
-<section></section>
+<section>
+  <!-- <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="images/12.png" alt=""></div>
+      <div class="swiper-slide"> <img src="images/13.jpg" alt=""></div>
+
+      <div class="swiper-slide"> <img src="images/14.jfif" alt=""></div>
+      <div class="swiper-slide"> <img src="images/14.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="images/12.png" alt=""></div>
+      <div class="swiper-slide"> <img src="images/12.png" alt=""></div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div> -->
+    
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/sonat.jpg" alt="">
+      <div class="sub-img">
+<span>   کلاسهای  فلسفه مدرن </span>
+      </div>
+    </div>
+      <div class="swiper-slide"><img src="images/نهج البلاغه2.jpg" alt="">
+        <div class="sub-img">
+          <span>  کلاسهای  نهج البلاغه </span>
+                </div>
+      </div>
+      <div class="swiper-slide"><img src="images/قرآن.jpg" alt="">
+        <div class="sub-img">
+          <span>کلاسهای  قرآن </span>
+                </div>
+      </div>
+      <!-- <div class="swiper-slide"><img src="images/sonat.jpg" alt="">
+        <div class="sub-img">
+          <span> عکس سوم مربوط به کلاسهای  است</span>
+                </div>
+      </div>
+      <div class="swiper-slide"><img src="images/modern.jpg" alt="">
+        <div class="sub-img">
+          <span> عکس چهارم مربوط به کلاسهای  دین است</span>
+                </div>
+      </div> -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
 
 <!-- Start Footer -->
     <footer>
@@ -126,8 +265,7 @@
                 <li class="right-list_item">تلفن</li>
                 <li class="right-list_item">آدرس</li>
             </ul>
-            </div>
-            
+            </div> 
         </div>
        <div class="sub-footer">
             <div class="sub-footer_icon">
@@ -152,7 +290,20 @@
   <!--  Finish Footer -->
 
     <script src="./vendor/fontawsom5/all.min.js"></script>
+    <script src="vendor/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    
+
+    <script src="vendor/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 </body>
 </html>
